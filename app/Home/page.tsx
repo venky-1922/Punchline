@@ -5,10 +5,12 @@ import Image from "next/image";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import Navbar from "@/components/Navbar";
+import ScrollTrigger from "gsap/ScrollTrigger";
 
 const HomePage = () => {
   const homeRef = useRef<HTMLDivElement>(null);
   useGSAP(() => {
+    gsap.registerPlugin(ScrollTrigger);
     gsap.from("#word", {
       x: -30,
       duration: 1.5,
@@ -22,6 +24,48 @@ const HomePage = () => {
       delay: 1,
       opacity: 0,
     });
+    gsap.from(".matter",{
+      y:-50,
+      // duration:1,
+      // delay:1,
+      opacity:0,
+      scrollTrigger:{
+        trigger:".matter",
+        scroller:"body",
+        markers:true,
+        start:"top 80%",
+        scrub:2,
+        end:"top 40%"
+      }
+    })
+    gsap.from(".matter2",{
+      x:-70,
+      // duration:1,
+      // delay:1,
+      opacity:0,
+      scrollTrigger:{
+        trigger:".matter2",
+        scroller:"body",
+        markers:true,
+        start:"top 80%",
+        scrub:2,
+        end:"top 30%"
+      }
+    })
+    gsap.from(".matter3",{
+      x:70,
+      // duration:1,
+      // delay:1,
+      opacity:0,
+      scrollTrigger:{
+        trigger:".matter3",
+        scroller:"body",
+        markers:true,
+        start:"top 80%",
+        scrub:2,
+        end:"top 30%"
+      }
+    })
   });
   return (
     <div id="homepage" className="bg-[#00D8FF]">
@@ -42,17 +86,10 @@ const HomePage = () => {
       </div>
       <div className="second-half">
         <div className="matter">
-          <div>Give your social media an extra punch</div>
-          <Image
-            className="image2 z-2"
-            src={"/punch.png"}
-            alt=""
-            height={80}
-            width={100}
-          ></Image>
+          <div>Give your social media an extra punch💥</div>
         </div>
         <div className="matter-container flex justify-between">
-          <div className=" matter2">
+          <div className="matter2">
             Punchline ensures that your social media works for you, without you
             having to lift a finger. Our experts know how to captivate an online
             audience as well as how to transform your clients into true and real
