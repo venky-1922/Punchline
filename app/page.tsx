@@ -1,11 +1,15 @@
-import Navbar from "@/components/Navbar";
+"use client"
+// import Navbar from "@/components/Navbar";
 import HomePage from "./Home/page";
+import Partners from "./Partners/page";
+
 
 export default function Home() {
   return (
-    <div className="w-full h-full bg-[#00D8FF]">
-      <Navbar />
+    <div className="w-full h-full bg-white">
+      {/* <Navbar /> */}
       <HomePage />
+      <Partners />
     </div>
   );
 }

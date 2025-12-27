@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+#homepage{
+    padding-bottom: 200px;
+    padding: 0px 70px;
+}
+.first-half{
+    /* background-color: green; */
+    height: 100vh;
+}
+.heading-class{
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 250px;
+    /* background-color: yellow; */
+}
+
+#word{
+    color: black;
+    /* background-color: green; */
+    font-size: 280px;
+    font-style: italic;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 10px;
+}
+.image{
+    /* background-color: red; */
+    position: absolute;
+    bottom: -40%;
+    left: 30%;
+}
+.second-half{
+    padding-bottom: 50px;
+}
+.matter-container{
+    /* padding-right: 60px; */
+    margin-top: 50px;
+}
+.matter{
+    font-size: 70px;
+    font-weight: 700;
+    color: black;
+    width: 70%;
+    line-height: 0.9;
+    display: flex;
+    /* background-color: yellow; */
+    justify-content: flex-end;
+
+}
+.image2{
+    padding-top: 40px;
+}
+.matter2{
+    width: 50%;
+    font-size: 25px;
+    /* background-color: red; */
+    padding: 10px;
+    color: black;
+    text-align: justify;
+}
+.matter3{
+    /* background-color: red; */
+    display: flex;
+    width: 35%;
+    color: black;
+    /* background-color: yellow; */
+    gap: 20px;
+    justify-content: flex-end;
+    /* padding-right: 20px; */
+    align-items: center;
+}
+.button1,.button2{
+    /* background-color: #223333; */
+    padding: 0px 30px;
+    color: black;
+    height: 60px;
+    font-weight: 400;
+    font-size: 20px;
+    background-color: white;
+}
+/* .button2{
+    background-color: white;
+    padding: 0px 30px;
+    height: 60px;
+    font-weight: 700;
+    font-weight: 400;
+    font-size: 20px;
+} */
+.button1{
+    background-color: #223333; 
+    color: white;
+}
