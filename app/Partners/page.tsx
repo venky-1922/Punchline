@@ -98,7 +98,7 @@ const Partners = () => {
   return (
     <div
       ref={partners_ref}
-      className="partners-container pt-25 px-18 h-screen bg-[#FBF8ED]"
+      className="partners-container pt-35 px-18 h-screen bg-[#FBF8ED]"
     >
       <div className="text-black text-[45px]  font-extrabold">
         They shine 🤩 online thanks to Punchline

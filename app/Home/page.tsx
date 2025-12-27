@@ -32,7 +32,7 @@ const HomePage = () => {
       scrollTrigger:{
         trigger:".matter",
         scroller:"body",
-        markers:true,
+        // markers:true,
         start:"top 80%",
         scrub:2,
         end:"top 40%"
@@ -46,7 +46,7 @@ const HomePage = () => {
       scrollTrigger:{
         trigger:".matter2",
         scroller:"body",
-        markers:true,
+        // markers:true,
         start:"top 80%",
         scrub:2,
         end:"top 30%"
@@ -60,7 +60,7 @@ const HomePage = () => {
       scrollTrigger:{
         trigger:".matter3",
         scroller:"body",
-        markers:true,
+        // markers:true,
         start:"top 80%",
         scrub:2,
         end:"top 30%"
