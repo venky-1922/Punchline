@@ -67,7 +67,7 @@ const Partners = () => {
   }, []);
 
   return (
-    <div className="partners-container pt-35 px-18 h-screen bg-[#FBF8ED]">
+    <div className="partners-container pt-25 px-18 h-screen bg-[#FBF8ED]">
       <div className="text-black text-[45px] font-extrabold">
         They shine 🤩 online thanks to Punchline
       </div>
