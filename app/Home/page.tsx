@@ -11,6 +11,17 @@ const HomePage = () => {
   const homeRef = useRef<HTMLDivElement>(null);
   useGSAP(() => {
     gsap.registerPlugin(ScrollTrigger);
+    gsap.fromTo(
+     homeRef.current,
+    {
+      clipPath: 'ellipse(0% 0% at 50% 100%)',
+    },
+    {
+      clipPath: 'ellipse(150% 120% at 50% 100%)',
+      duration: 1.4,
+      ease: 'power3.out',
+    }
+    )
     gsap.from("#word", {
       x: -30,
       duration: 1.5,
@@ -68,10 +79,10 @@ const HomePage = () => {
     })
   });
   return (
-    <div id="homepage" className="bg-[#00D8FF]">
+    <div ref={homeRef} id="homepage" className="bg-[#00D8FF]">
       <div className="first-half">
         <Navbar />
-        <div ref={homeRef} className="heading-class">
+        <div  className="heading-class">
           <h1 id="word" className={`text-red font-extrabold `}>
             Punchline
           </h1>

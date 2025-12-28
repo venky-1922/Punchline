@@ -28,7 +28,7 @@ const Approach = () => {
           Monitoring what happens on your various social media channels is an
           important task, however it necessitates a lot of work.
         </p>
-        <button className="px-10 py-5 bg-[#233333] text-white rounded-full w-fit">This is how we approach it</button>
+        <button className="px-10 py-5 bg-[#233333] text-white rounded-full w-fit cursor-pointer">This is how we approach it</button>
       </div>
     </div>
   );
