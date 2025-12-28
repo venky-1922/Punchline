@@ -27,7 +27,7 @@ const Partners = () => {
   let scrollForce = 0;
   let direction = 1;
 
-  const baseSpeed = 0.9;
+  const baseSpeed = 1.5;
   const friction = 0.4;
 
   useGSAP(() => {
@@ -72,10 +72,10 @@ const Partners = () => {
         They shine 🤩 online thanks to Punchline
       </div>
 
-      <div className="overflow-hidden mt-10">
+      <div className="overflow-hidden mt-30">
         <div
           ref={containerRef}
-          className="image-container flex gap-10 w-max will-change-transform"
+          className="image-container flex gap-5 w-max will-change-transform"
         >
           {/* 🔥 DUPLICATED CONTENT */}
           {[...brand_images, ...brand_images].map((src, index) => (
@@ -83,9 +83,9 @@ const Partners = () => {
               <Image
                 src={src}
                 alt=""
-                width={350}
-                height={350}
-                className="h-75 w-75 object-cover"
+                width={450}
+                height={450}
+                className="h-100 w-100 object-cover"
               />
             </div>
           ))}

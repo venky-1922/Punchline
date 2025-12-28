@@ -52,7 +52,7 @@ const Portfolio = () => {
       scrollTrigger: {
         trigger: ".card1",
         scroller: "body",
-        markers: true,
+        // markers: true,
         start: "top 60%",
         scrub: 3,
         end: "top 30%",
@@ -65,7 +65,7 @@ const Portfolio = () => {
       scrollTrigger: {
         trigger: ".card2",
         scroller: "body",
-        markers: true,
+        // markers: true,
         start: "top 60%",
         scrub: 3,
         end: "top 30%",

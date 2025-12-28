@@ -16,7 +16,7 @@ const Approach = () => {
         scrollTrigger:{
           trigger: ".card",
           scroller:"body",
-          markers:true,
+          // markers:true,
           start: "top 70%",
           scrub:3,
           end:"top 30%"
