@@ -3,7 +3,7 @@ import React from "react";
 
 const Approach = () => {
   return (
-    <div className="flex w-full pt-12.5 px-17.5 bg-[#fff] pb-[100px] justify-between]">
+    <div className="flex w-full pt-12.5 px-17.5 bg-white pb-25 justify-between]">
       <div className="flex flex-col gap-10 w-[80%]">
         <Card
           src="/clock.png"

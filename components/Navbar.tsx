@@ -37,7 +37,7 @@ const Navbar = () => {
         ></Image>
         <h1 className="text-4xl font-[1000] italic">Punchline</h1>
       </div>
-      <div className="flex nav-items bg-[#99EFFF] text-xl items-center px-5 py-3 rounded-full ">
+      <div className="flex nav-items bg-[#99EFFF] items-center px-5 py-2 rounded-full ">
         <div className="items flex items-center gap-1">
           <Link href="">Work with Punchline</Link>
           <IoIosArrowDropdown />
