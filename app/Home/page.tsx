@@ -79,10 +79,10 @@ const HomePage = () => {
     });
   });
   return (
-    <div ref={homeRef} id="homepage" className="bg-[#00D8FF] overflow-x-hidden px-[30px] lg:px-[70px]">
+    <div ref={homeRef} id="homepage" className="bg-[#00D8FF] overflow-x-hidden px-[30px] lg:px-[70px] h-fit">
       <div className="first-half">
         <Navbar />
-        <div className="heading-class mb-[100px] lg:mb-[250px] ">
+        <div className="heading-class mb-[100px] sm:[170px] md:[200px] lg:mb-[250px]">
           <h1
             id="word"
             className="text-red font-extrabold text-[clamp(3rem,15vw,15rem)]"
@@ -105,17 +105,17 @@ const HomePage = () => {
           </div>
         </div>
         <div className="mt-[50px] flex-col sm:flex-col lg:flex-row flex justify-between ">
-          <div className="text-[clamp(10px,2.5vw,25px)] matter2 w-[80%] lg:w-[50%]">
+          <div className="text-[clamp(12px,4vw,25px)] matter2 w-[80%] lg:w-[50%]">
             Punchline ensures that your social media works for you, without you
             having to lift a finger. Our experts know how to captivate an online
             audience as well as how to transform your clients into true and real
             fans.
           </div>
           <div className="flex flex-col lg:flex-row w-[80%] lg:w-[35%] text-black gap-[clamp(0.5rem,3vw,1.25rem)] justify-end lg:items-center">
-            <button className="text-[clamp(5px,2.5vw,20px)] py-4 button1 rounded-full whitespace-nowrap">
+            <button className="text-[clamp(10px,4vw,16px)] py-4 button1 rounded-full whitespace-nowrap">
               How do we do it
             </button>
-            <button className="text-[clamp(5px,2.5vw,20px)] py-4 button2 rounded-full whitespace-nowrap">
+            <button className="text-[clamp(10px,4vw,16px)] py-4 button2 rounded-full whitespace-nowrap">
               Our projects
             </button>
           </div>

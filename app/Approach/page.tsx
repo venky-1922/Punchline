@@ -25,8 +25,8 @@ const Approach = () => {
     }
   )
   return (
-    <div className="flex w-full pt-12.5 px-17.5 bg-white pb-25 justify-between] sm:flex-col-reverse lg:flex-row">
-      <div className="flex flex-col gap-10 w-[80%]">
+    <div className="flex flex-col-reverse w-full pt-12.5 sm:px-17.5 bg-white pb-25 justify-between] lg:flex-row">
+      <div className="flex flex-col gap-10 w-[80%] pl-5 sm:pl-0">
         <Card
           class="card"
           src="/clock.png"
@@ -46,16 +46,16 @@ const Approach = () => {
           matter="Depending on the case you need different skills and even those can change from one day to the next. Do you need all that knowledge internally or is it best to rely on an external partner?"
         />
       </div>
-      <div className="xl:w-[50%] p-10 px-20 text-black flex flex-col gap-8 sm:w-[80%] sm:items-center">
+      <div className="xl:w-[50%] p-10 sm:px-20 text-black flex flex-col gap-8 sm:w-[80%] items-start sm:items-center">
         <p className="p-2 rounded-full bg-amber-100 w-fit whitespace-nowrap">
           Your partner in crime
         </p>
-        <h1 className="xl:text-5xl font-bold sm:text-3xl md:text-4xl">Make it easier for yourself</h1>
-        <p className="text-justify text-2xl text-[#33737E] sm:text-[16px] md:text-[18px] lg:text-[20px]">
+        <h1 className="font-bold text-[clamp(20px,6vw,50px)]">Make it easier for yourself</h1>
+        <p className="text-justify text-[#33737E] text-[clamp(14px,4vw,20px)]">
           Monitoring what happens on your various social media channels is an
           important task, however it necessitates a lot of work.
         </p>
-        <button className="px-10 py-5 bg-[#233333] text-white rounded-full w-fit cursor-pointer whitespace-nowrap">
+        <button className="px-7 py-5 bg-[#233333] text-white rounded-full w-fit cursor-pointer whitespace-nowrap text-[clamp(10px,4vw,16px)]">
           This is how we approach it
         </button>
       </div>

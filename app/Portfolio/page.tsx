@@ -53,7 +53,7 @@ const Portfolio = () => {
         trigger: ".card1",
         scroller: "body",
         // markers: true,
-        start: "top 60%",
+        start: "top 70%",
         scrub: 3,
         end: "top 30%",
       },
@@ -66,7 +66,7 @@ const Portfolio = () => {
         trigger: ".card2",
         scroller: "body",
         // markers: true,
-        start: "top 60%",
+        start: "top 70%",
         scrub: 3,
         end: "top 30%",
       },
@@ -74,15 +74,15 @@ const Portfolio = () => {
   });
 
   return (
-    <div className="bg-white h-fit pb-30 px-40 pt-20">
+    <div className="bg-white h-fit pb-30 px-10 sm:px-40 pt-20">
       <div className="px-5 py-1 bg-amber-100 text-black w-fit rounded-full">
         Portfolio
       </div>
-      <div className="flex justify-between mt-5 sm:flex-col sm:gap-10 xl:flex-row">
-        <div className="xl:w-[30%]  text-black text-6xl font-bold sm:w-[100%]">
+      <div className="flex flex-col justify-between mt-5 sm:gap-10 xl:flex-row">
+        <div className="xl:w-[30%]  text-black font-bold w-[100%] text-[clamp(20px,6vw,50px)]">
           Tough job? Check! ✅
         </div>
-        <div className="text-black sm:w-[100%] xl:w-[40%] text-2xl ">
+        <div className="text-black sm:w-[100%] xl:w-[40%] text-[clamp(12px,4vw,20px)] ">
           From telecom operators and car brands to the government, they all
           count on Punchline to use social media successfully.
         </div>
@@ -99,7 +99,7 @@ const Portfolio = () => {
             height={400}
             width={500}
           ></Image>
-          <h1 className="text-4xl font-bold">Proximus Picks</h1>
+          <h1 className="text-[clamp(20px,6vw,40px)] font-bold">Proximus Picks</h1>
           <p>
             We built custom reporting models, set up a direct line with the
             technical team, and tailored content for three audiences:
@@ -129,7 +129,7 @@ const Portfolio = () => {
             height={500}
             width={500}
           ></Image>
-          <h1 className="text-4xl font-bold">Combell</h1>
+          <h1 className="text-[clamp(20px,6vw,40px)] font-bold">Combell</h1>
           <p>
             For Combell, we made Employer Branding tangible through videos
             supported by advertising. The result: wide reach, high engagement,
@@ -138,7 +138,7 @@ const Portfolio = () => {
         </div>
       </div>
       <div className="flex w-full justify-center mt-7">
-        <button className="px-10 py-5 bg-[#233333] text-white rounded-full w-fit cursor-pointer">
+        <button className="px-7 py-5 bg-[#233333] text-white rounded-full w-fit cursor-pointer text-[clamp(10px,4vw,16px)]">
           See more projects
         </button>
       </div>

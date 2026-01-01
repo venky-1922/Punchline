@@ -53,13 +53,13 @@ const Navbar = () => {
         <h1 className="text-4xl font-[1000] italic">Punchline</h1>
       </div>
       {!open && (
-        <div className="flex bg-amber-200 h-full lg:hidden items-center">
+        <div className="flex h-full lg:hidden items-center">
           <MdMenuOpen size={30} onClick={()=>
             handleOpen()
           }/>
         </div>
       )}
-      <div className={`flex nav-items absolute right-[-30px] z-10 bg-[#99EFFF]  right-0 ${open?"flex-col":"hidden"} lg:flex lg:items-center px-5 py-2 lg:rounded-full `}>
+      <div className={`flex nav-items absolute right-[-30px] z-10 bg-[#99EFFF]  right-0 ${open?"flex-col":"hidden"} lg:${open?"flex-row":"flex"} lg:items-center px-5 py-2 lg:rounded-full `}>
         <div className="flex w-full justify-end lg:hidden">
           <RxCross2 size={27} 
           onClick={()=>{
