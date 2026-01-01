@@ -99,7 +99,7 @@ const HomePage = () => {
         </div>
       </div>
       <div className="second-half">
-        <div className="matter">
+        <div className="matter w-[100%] sm:w-[70%]">
           <div className="text-[clamp(2rem,4.5vw,5rem)]">
             Give your social media an extra punch💥
           </div>
@@ -112,10 +112,10 @@ const HomePage = () => {
             fans.
           </div>
           <div className="flex flex-col lg:flex-row w-[80%] lg:w-[35%] text-black gap-[clamp(0.5rem,3vw,1.25rem)] justify-end lg:items-center">
-            <button className="text-[clamp(5px,2.5vw,20px)] button1 rounded-full whitespace-nowrap">
+            <button className="text-[clamp(5px,2.5vw,20px)] py-4 button1 rounded-full whitespace-nowrap">
               How do we do it
             </button>
-            <button className="text-[clamp(5px,2.5vw,20px)] button2 rounded-full whitespace-nowrap">
+            <button className="text-[clamp(5px,2.5vw,20px)] py-4 button2 rounded-full whitespace-nowrap">
               Our projects
             </button>
           </div>

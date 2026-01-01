@@ -41,7 +41,7 @@
     font-size: 70px;
     font-weight: 700;
     color: black;
-    width: 70%;
+    /* width: 70%; */
     line-height: 0.9;
     display: flex;
     /* background-color: yellow; */
@@ -61,9 +61,9 @@
 }
 .button1,.button2{
     /* background-color: #223333; */
-    padding: 0px 30px;
+    /* padding: 0px 30px; */
     color: black;
-    height: 60px;
+    /* height: 40px; */
     font-weight: 400;
     /* font-size: 20px; */
     background-color: white;
