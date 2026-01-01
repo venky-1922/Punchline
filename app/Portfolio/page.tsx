@@ -53,7 +53,7 @@ const Portfolio = () => {
         trigger: ".card1",
         scroller: "body",
         // markers: true,
-        start: "top 70%",
+        start: "top 60%",
         scrub: 3,
         end: "top 30%",
       },
@@ -66,7 +66,7 @@ const Portfolio = () => {
         trigger: ".card2",
         scroller: "body",
         // markers: true,
-        start: "top 70%",
+        start: "top 60%",
         scrub: 3,
         end: "top 30%",
       },
@@ -74,15 +74,15 @@ const Portfolio = () => {
   });
 
   return (
-    <div className="bg-white h-fit pb-30 sm:px-40 px-5 pt-20">
+    <div className="bg-white h-fit pb-30 px-40 pt-20">
       <div className="px-5 py-1 bg-amber-100 text-black w-fit rounded-full">
         Portfolio
       </div>
-      <div className="flex-col justify-between mt-5 sm:flex-col sm:gap-10 xl:flex-row">
-        <div className="xl:w-[30%] w-[100%]  text-black text-[clamp(30px,2vw,60px)] font-bold sm:w-[100%]">
+      <div className="flex justify-between mt-5 sm:flex-col sm:gap-10 xl:flex-row">
+        <div className="xl:w-[30%]  text-black text-6xl font-bold sm:w-[100%]">
           Tough job? Check! ✅
         </div>
-        <div className="text-black sm:w-[100%] xl:w-[40%] text-[clamp(14px,2vw,20px)] ">
+        <div className="text-black sm:w-[100%] xl:w-[40%] text-2xl ">
           From telecom operators and car brands to the government, they all
           count on Punchline to use social media successfully.
         </div>
@@ -99,8 +99,8 @@ const Portfolio = () => {
             height={400}
             width={500}
           ></Image>
-          <h1 className="text-[clamp(25px,2vw,40px)] font-bold">Proximus Picks</h1>
-          <p className="text-[clamp(12px,2vw,16px)]">
+          <h1 className="text-4xl font-bold">Proximus Picks</h1>
+          <p>
             We built custom reporting models, set up a direct line with the
             technical team, and tailored content for three audiences:
             informative on Facebook, visual on Instagram, and creative on
@@ -129,8 +129,8 @@ const Portfolio = () => {
             height={500}
             width={500}
           ></Image>
-          <h1 className="text-[clamp(25px,2vw,40px)] font-bold">Combell</h1>
-          <p className="text-[clamp(12px,2vw,16px)]">
+          <h1 className="text-4xl font-bold">Combell</h1>
+          <p>
             For Combell, we made Employer Branding tangible through videos
             supported by advertising. The result: wide reach, high engagement,
             and costs well below market averages.
@@ -138,7 +138,7 @@ const Portfolio = () => {
         </div>
       </div>
       <div className="flex w-full justify-center mt-7">
-        <button className="px-[clamp(24px,2.5vw,40px)] text-[clamp(12px,2vw,16px)] py-[clamp(12px,2.5vw,20px)] bg-[#233333] text-white rounded-full w-fit cursor-pointer">
+        <button className="px-10 py-5 bg-[#233333] text-white rounded-full w-fit cursor-pointer">
           See more projects
         </button>
       </div>

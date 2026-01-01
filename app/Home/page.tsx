@@ -79,7 +79,7 @@ const HomePage = () => {
     });
   });
   return (
-    <div ref={homeRef} id="homepage" className="bg-[#00D8FF] overflow-x-hidden">
+    <div ref={homeRef} id="homepage" className="bg-[#00D8FF] overflow-x-hidden px-[30px] lg:px-[70px]">
       <div className="first-half">
         <Navbar />
         <div className="heading-class mb-[100px] lg:mb-[250px] ">
