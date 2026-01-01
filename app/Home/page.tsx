@@ -12,16 +12,16 @@ const HomePage = () => {
   useGSAP(() => {
     gsap.registerPlugin(ScrollTrigger);
     gsap.fromTo(
-     homeRef.current,
-    {
-      clipPath: 'ellipse(0% 0% at 50% 100%)',
-    },
-    {
-      clipPath: 'ellipse(150% 120% at 50% 100%)',
-      duration: 1.4,
-      ease: 'power3.out',
-    }
-    )
+      homeRef.current,
+      {
+        clipPath: "ellipse(0% 0% at 50% 100%)",
+      },
+      {
+        clipPath: "ellipse(150% 120% at 50% 100%)",
+        duration: 1.4,
+        ease: "power3.out",
+      }
+    );
     gsap.from("#word", {
       x: -30,
       duration: 1.5,
@@ -35,59 +35,62 @@ const HomePage = () => {
       delay: 1,
       opacity: 0,
     });
-    gsap.from(".matter",{
-      y:-50,
+    gsap.from(".matter", {
+      y: -50,
       // duration:1,
       // delay:1,
-      opacity:0,
-      scrollTrigger:{
-        trigger:".matter",
-        scroller:"body",
+      opacity: 0,
+      scrollTrigger: {
+        trigger: ".matter",
+        scroller: "body",
         // markers:true,
-        start:"top 80%",
-        scrub:2,
-        end:"top 40%"
-      }
-    })
-    gsap.from(".matter2",{
-      x:-70,
+        start: "top 80%",
+        scrub: 2,
+        end: "top 40%",
+      },
+    });
+    gsap.from(".matter2", {
+      x: -70,
       // duration:1,
       // delay:1,
-      opacity:0,
-      scrollTrigger:{
-        trigger:".matter2",
-        scroller:"body",
+      opacity: 0,
+      scrollTrigger: {
+        trigger: ".matter2",
+        scroller: "body",
         // markers:true,
-        start:"top 80%",
-        scrub:2,
-        end:"top 30%"
-      }
-    })
-    gsap.from(".matter3",{
-      x:70,
+        start: "top 80%",
+        scrub: 2,
+        end: "top 30%",
+      },
+    });
+    gsap.from(".matter3", {
+      x: 70,
       // duration:1,
       // delay:1,
-      opacity:0,
-      scrollTrigger:{
-        trigger:".matter3",
-        scroller:"body",
+      opacity: 0,
+      scrollTrigger: {
+        trigger: ".matter3",
+        scroller: "body",
         // markers:true,
-        start:"top 80%",
-        scrub:2,
-        end:"top 30%"
-      }
-    })
+        start: "top 80%",
+        scrub: 2,
+        end: "top 30%",
+      },
+    });
   });
   return (
-    <div ref={homeRef} id="homepage" className="bg-[#00D8FF]">
+    <div ref={homeRef} id="homepage" className="bg-[#00D8FF] overflow-x-hidden">
       <div className="first-half">
         <Navbar />
-        <div  className="heading-class">
-          <h1 id="word" className={`text-red font-extrabold `}>
+        <div className="heading-class mb-[100px] lg:mb-[250px] ">
+          <h1
+            id="word"
+            className="text-red font-extrabold text-[clamp(3rem,15vw,15rem)]"
+          >
             Punchline
           </h1>
           <Image
-            className="image z-2"
+            className="image z-2 h-[clamp(5rem,20vw,20rem)] w-[clamp(5rem,30vw,30rem)]"
             src={"/horses.png"}
             alt=""
             height={700}
@@ -97,18 +100,24 @@ const HomePage = () => {
       </div>
       <div className="second-half">
         <div className="matter">
-          <div>Give your social media an extra punch💥</div>
+          <div className="text-[clamp(2rem,4.5vw,5rem)]">
+            Give your social media an extra punch💥
+          </div>
         </div>
-        <div className="matter-container flex justify-between">
-          <div className="matter2">
+        <div className="mt-[50px] flex-col sm:flex-col lg:flex-row flex justify-between ">
+          <div className="text-[clamp(10px,2.5vw,25px)] matter2 w-[80%] lg:w-[50%]">
             Punchline ensures that your social media works for you, without you
             having to lift a finger. Our experts know how to captivate an online
             audience as well as how to transform your clients into true and real
             fans.
           </div>
-          <div className="matter3">
-            <button className="button1 rounded-full">How do we do it</button>
-            <button className="button2 rounded-full">Our projects</button>
+          <div className="flex flex-col lg:flex-row w-[80%] lg:w-[35%] text-black gap-[clamp(0.5rem,3vw,1.25rem)] justify-end lg:items-center">
+            <button className="text-[clamp(5px,2.5vw,20px)] button1 rounded-full whitespace-nowrap">
+              How do we do it
+            </button>
+            <button className="text-[clamp(5px,2.5vw,20px)] button2 rounded-full whitespace-nowrap">
+              Our projects
+            </button>
           </div>
         </div>
       </div>

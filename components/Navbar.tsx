@@ -38,12 +38,12 @@ const Navbar = () => {
         <h1 className="text-4xl font-[1000] italic">Punchline</h1>
       </div>
       <div className="flex nav-items bg-[#99EFFF] items-center px-5 py-2 rounded-full ">
-        <div className="items flex items-center gap-1">
-          <Link href="">Work with Punchline</Link>
+        <div className="items flex items-center gap-1 whitespace-nowrap">
+          <Link className="text-[clamp(12px,2vw,16px)]" href="">Work with Punchline</Link>
           <IoIosArrowDropdown />
         </div>
-        <Link className="items" href="">Work at Punchline</Link>
-        <Link  href="" className="items bg-[#C4A3F6] px-6 py-3 rounded-full">
+        <Link className="items whitespace-nowrap text-[clamp(12px,2vw,16px)]" href="" >Work at Punchline</Link>
+        <Link  href="" className="items bg-[#C4A3F6] px-6 py-3 rounded-full whitespace-nowrap">
           Contact us
         </Link>
       </div>

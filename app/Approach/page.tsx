@@ -17,7 +17,7 @@ const Approach = () => {
           trigger: ".card",
           scroller:"body",
           // markers:true,
-          start: "top 70%",
+          start: "top 60%",
           scrub:3,
           end:"top 30%"
         }
@@ -25,8 +25,8 @@ const Approach = () => {
     }
   )
   return (
-    <div className="flex w-full pt-12.5 px-17.5 bg-white pb-25 justify-between]">
-      <div className="flex flex-col gap-10 w-[80%]">
+    <div className="flex flex-col w-full pt-12.5 px-2 sm:px-17.5 bg-white pb-25 justify-between] sm:flex-col-reverse lg:flex-row">
+      <div className="flex flex-col gap-10 sm:w-[80%] w-[100%]">
         <Card
           class="card"
           src="/clock.png"
@@ -46,16 +46,16 @@ const Approach = () => {
           matter="Depending on the case you need different skills and even those can change from one day to the next. Do you need all that knowledge internally or is it best to rely on an external partner?"
         />
       </div>
-      <div className=" w-[50%] p-10 px-20 text-black flex flex-col gap-8 ">
-        <p className="p-2 rounded-full bg-amber-100 w-fit">
+      <div className="xl:w-[50%] p-10 px-20 text-black flex flex-col gap-8 sm:w-[80%] sm:items-center">
+        <p className="p-2 rounded-full bg-amber-100 w-fit whitespace-nowrap">
           Your partner in crime
         </p>
-        <h1 className="text-5xl font-bold">Make it easier for yourself</h1>
-        <p className="text-justify text-2xl text-[#33737E]">
+        <h1 className="text-[clamp(20px,2vw,50px)]">Make it easier for yourself</h1>
+        <p className="text-justify text-[#33737E] text-[clamp(14px,2vw,20px)]">
           Monitoring what happens on your various social media channels is an
           important task, however it necessitates a lot of work.
         </p>
-        <button className="px-10 py-5 bg-[#233333] text-white rounded-full w-fit cursor-pointer">
+        <button className="px-[clamp(24px,2.5vw,40px)] text-[clamp(12px,2vw,16px)] py-[clamp(12px,2.5vw,20px)] bg-[#233333] text-white rounded-full w-fit cursor-pointer whitespace-nowrap">
           This is how we approach it
         </button>
       </div>

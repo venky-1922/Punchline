@@ -13,14 +13,13 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    margin-bottom: 250px;
     /* background-color: yellow; */
 }
 
 #word{
     color: black;
-    /* background-color: green; */
-    font-size: 280px;
+    /* backgroud-color: green; */
+    /* font-size: 15rem; */
     font-style: italic;
     font-family: 'Anton', sans-serif;
     letter-spacing: 10px;
@@ -36,7 +35,7 @@
 }
 .matter-container{
     /* padding-right: 60px; */
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 .matter{
     font-size: 70px;
@@ -53,23 +52,12 @@
     padding-top: 40px;
 }
 .matter2{
-    width: 50%;
-    font-size: 25px;
+    /* width: 50%; */
+    /* font-size: 25px; */
     /* background-color: red; */
     padding: 10px;
     color: black;
     text-align: justify;
-}
-.matter3{
-    /* background-color: red; */
-    display: flex;
-    width: 35%;
-    color: black;
-    /* background-color: yellow; */
-    gap: 20px;
-    justify-content: flex-end;
-    /* padding-right: 20px; */
-    align-items: center;
 }
 .button1,.button2{
     /* background-color: #223333; */
@@ -77,7 +65,7 @@
     color: black;
     height: 60px;
     font-weight: 400;
-    font-size: 20px;
+    /* font-size: 20px; */
     background-color: white;
 }
 /* .button2{
